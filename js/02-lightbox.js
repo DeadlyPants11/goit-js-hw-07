@@ -15,11 +15,13 @@ const markup = galleryItems.reduce(
   ""
 );
 
+gallery.insertAdjacentHTML("beforeend", markup);
+
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData : "alt",
   captionDelay: 250
 });
 
-gallery.insertAdjacentHTML("beforeend", markup);
+
 
 console.log(galleryItems);
